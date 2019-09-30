@@ -1,22 +1,21 @@
+// IMPORTS
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Title from "./components/Title";
 
 function App() {
   return (
     <div className="App">
+      <main>
+        <Title />
+      </main>
+
       <header className="App-header">
-        <h1> Hello World </h1>
-        <h2> And welcome to Codaisseur! </h2>
-        <p>
-          {" "}
-          It's fun that it works like this, but I don't like the fact that my
-          theme in JavasScript doesn't show me the difference of an element of
-          my normal text
-        </p>
+        <h2>Esvi Codes checks in to learn...</h2>
+        <p>React!</p>
       </header>
     </div>
   );
 }
-
 export default App;
