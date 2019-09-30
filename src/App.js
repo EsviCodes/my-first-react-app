@@ -6,6 +6,7 @@ import "./App.css";
 // import LightSwitch from "./components/LightSwitch";
 import Users from "./components/Users";
 import Userboard from "./components/Userboard";
+import UserPurpose from "./components/UserPurpose";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </main> */}
       <Userboard />
       <Users />
+      <UserPurpose />
       <header className="App-header">
         {/* <h2>Esvi Codes checks in to learn...</h2>
         <p>React!</p> */}
