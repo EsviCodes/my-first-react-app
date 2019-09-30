@@ -5,6 +5,7 @@ import "./App.css";
 // import Title from "./components/Title";
 // import LightSwitch from "./components/LightSwitch";
 import Users from "./components/Users";
+import Userboard from "./components/Userboard";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Title content="Some Simple Title" />
         <LightSwitch />
       </main> */}
+      <Userboard />
       <Users />
       <header className="App-header">
         {/* <h2>Esvi Codes checks in to learn...</h2>
