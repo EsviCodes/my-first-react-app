@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 export default class UserPurpose extends Component {
-  state = { active: true };
+  state = { active: false };
 
   toggle = () => {
     this.setState({
-      active: !this.state.active
+      active: !this.state.active // set to true of false if I don't wanna change it back
     });
   };
 
@@ -13,12 +13,8 @@ export default class UserPurpose extends Component {
     return (
       <div>
         <p>
-          has found his or her purpose:{" "}
-          <b>
-            {this.state.active
-              ? "YEAH!"
-              : "I have no idea what I want to do with my life"}
-          </b>
+          <b>Have I found a purpose? </b>
+          this.state.active ? "OH YEAH!" : "Nope, not today"}
         </p>
         <button onClick={this.toggle}>Found purpose?</button>
       </div>

@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import UserPurpose from "./UserPurpose";
 
 function User(props) {
   return (
@@ -8,32 +9,12 @@ function User(props) {
   );
 }
 
-class UserPurpose extends Component {
-  state = { active: true };
-
-  toggle = () => {
-    this.setState({
-      active: !this.state.active
-    });
-  };
-
-  render() {
-    return (
-      <div>
-        <p>
-          Have I found a purpose?{" "}
-          <b>{this.state.active ? "OH YEAH!" : "Nope, not today"}</b>
-        </p>
-        <button onClick={this.toggle}>Found purpose?</button>
-      </div>
-    );
-  }
-}
-
 function Users() {
   return (
     <main>
       <div>
+        {" "}
+        {/*// enclosing element */}
         <User name="Princeton" />
         <UserPurpose />
         <User name="Kate Monster" />
