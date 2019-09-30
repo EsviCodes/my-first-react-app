@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1> Hello World </h1>
+        <h2> And welcome to Codaisseur! </h2>
         <p>
           {" "}
           It's fun that it works like this, but I don't like the fact that my
